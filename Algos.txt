@@ -1,0 +1,87 @@
+For a fresher entering the field of computer science or software development, it's important to have a strong grasp of fundamental algorithms. Here’s a list of important algorithms and data structures that a fresher should learn:
+
+### Sorting and Searching Algorithms
+1. **Bubble Sort**
+2. **Selection Sort**
+3. **Insertion Sort**
+4. **Merge Sort**
+5. **Quick Sort**
+6. **Heap Sort**
+7. **Binary Search**
+
+### Data Structures
+8. **Arrays**
+9. **Linked Lists (Singly, Doubly)**
+10. **Stacks**
+11. **Queues**
+12. **Hash Tables**
+13. **Binary Trees**
+14. **Binary Search Trees**
+15. **Heap / Priority Queue**
+16. **Graph (Adjacency List, Adjacency Matrix)**
+17. **Trie**
+
+### Recursion and Backtracking
+18. **Factorial**
+19. **Fibonacci Sequence**
+20. **Tower of Hanoi**
+21. **N-Queens Problem**
+22. **Sudoku Solver**
+
+### Dynamic Programming
+23. **0/1 Knapsack Problem**
+24. **Longest Common Subsequence**
+25. **Longest Increasing Subsequence**
+26. **Floyd-Warshall Algorithm**
+27. **Matrix Chain Multiplication**
+
+### Greedy Algorithms
+28. **Activity Selection Problem**
+29. **Fractional Knapsack Problem**
+30. **Huffman Coding**
+31. **Prim’s Algorithm (Minimum Spanning Tree)**
+32. **Kruskal’s Algorithm (Minimum Spanning Tree)**
+33. **Dijkstra’s Algorithm (Shortest Path)**
+
+### Graph Algorithms
+34. **Breadth-First Search (BFS)**
+35. **Depth-First Search (DFS)**
+36. **Topological Sorting**
+37. **Shortest Path Algorithms (Bellman-Ford, Dijkstra's)**
+38. **Minimum Spanning Tree (Prim’s, Kruskal’s)**
+39. **Strongly Connected Components (Tarjan’s Algorithm)**
+40. **Graph Coloring**
+
+### String Algorithms
+41. **String Matching (Naive, KMP)**
+42. **Rabin-Karp Algorithm**
+43. **Longest Common Substring**
+44. **Trie Operations**
+
+### Advanced Data Structures
+45. **Segment Tree**
+46. **Fenwick Tree (Binary Indexed Tree)**
+47. **Union-Find (Disjoint Set Union)**
+48. **AVL Tree**
+49. **Red-Black Tree**
+50. **B-Tree**
+
+### Miscellaneous Algorithms
+51. **Sieve of Eratosthenes (Prime Numbers)**
+52. **Greatest Common Divisor (GCD) using Euclid’s Algorithm**
+53. **Exponentiation by Squaring**
+54. **Counting Sort**
+55. **Radix Sort**
+
+### Algorithmic Techniques
+56. **Divide and Conquer**
+57. **Greedy Method**
+58. **Dynamic Programming**
+59. **Backtracking**
+60. **Branch and Bound**
+
+### Practice and Application
+- **Coding Platforms**: Regularly practice on platforms like LeetCode, HackerRank, Codeforces, and GeeksforGeeks.
+- **Projects**: Implement projects that incorporate multiple data structures and algorithms to solve real-world problems.
+
+By mastering these algorithms and data structures, a fresher will have a solid foundation for tackling a wide range of problems in coding interviews, competitive programming, and real-world software development.

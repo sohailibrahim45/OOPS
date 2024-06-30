@@ -1,0 +1,31 @@
+Sure, here are a few coding questions similar to counting the number of islands, along with their inputs and outputs:
+
+1. **Flood Fill:**
+   - Given a 2D grid of colors and a starting pixel (row, column), implement a function to perform a flood fill, changing all pixels in the same region with the same color as the starting pixel to a new color.
+   - **Input:** 
+     - 2D grid of colors (e.g., `grid`), starting pixel coordinates (e.g., `start_row`, `start_col`), and a new color.
+   - **Output:**
+     - Updated grid after performing the flood fill.
+   
+2. **Surrounded Regions:**
+   - Given a 2D grid of characters representing 'X' (walls) and 'O' (regions), capture all regions surrounded by 'X'. A region is captured if it is surrounded by 'X' on all sides.
+   - **Input:**
+     - 2D grid of characters (e.g., `board`).
+   - **Output:**
+     - Updated grid after capturing the surrounded regions.
+   
+3. **Number of Connected Components in an Undirected Graph:**
+   - Given an undirected graph represented as an adjacency list, find the total number of connected components in the graph.
+   - **Input:**
+     - Graph represented as an adjacency list (e.g., `graph`).
+   - **Output:**
+     - Total number of connected components.
+   
+4. **Trapping Rain Water:**
+   - Given an elevation map representing the height of walls, calculate the total amount of water that can be trapped between the walls.
+   - **Input:**
+     - List of wall heights (e.g., `heights`).
+   - **Output:**
+     - Total amount of trapped water.
+
+These questions involve traversing through a grid or graph, identifying connected components, and performing operations based on certain conditions. They require similar concepts and techniques as the number of islands problem, such as depth-first search (DFS), breadth-first search (BFS), or other graph traversal algorithms.

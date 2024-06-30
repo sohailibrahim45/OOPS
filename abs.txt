@@ -1,0 +1,113 @@
+Certainly! Let's cover abstraction next.
+
+### Abstraction Interview Questions (4 Years Experienced):
+
+1. **What is abstraction in OOP, and why is it important?**
+   - **Answer**: Abstraction is the process of hiding implementation details and showing only the essential features of an object. It helps in managing code complexity and improving code maintainability.
+
+2. **How does abstraction reduce complexity in software development?**
+   - **Answer**: Abstraction allows programmers to focus on high-level design concepts without worrying about low-level implementation details. It provides a simplified view of complex systems.
+
+3. **What are abstract classes, and when would you use them?**
+   - **Answer**: Abstract classes are classes that cannot be instantiated and may contain abstract methods. They are used as blueprints for other classes and provide a common interface for subclasses.
+
+4. **What is the difference between abstract classes and interfaces?**
+   - **Answer**: Abstract classes can have both abstract and concrete methods, while interfaces can only have abstract methods. Abstract classes can have constructors, fields, and method implementations, while interfaces cannot.
+
+5. **How do you achieve abstraction in Python and Java? Provide code examples.**
+   - **Answer**: In Python, abstraction can be achieved using abstract base classes from the `abc` module. In Java, it can be achieved using abstract classes and interfaces.
+
+6. **Explain the concept of abstract methods.**
+   - **Answer**: Abstract methods are methods without a body, i.e., they only contain method signatures. They are declared in abstract classes or interfaces and must be implemented by concrete subclasses.
+
+7. **What is the purpose of interfaces in Java?**
+   - **Answer**: Interfaces in Java define a contract for implementing classes. They specify a set of method signatures without implementations, allowing multiple classes to implement the same interface.
+
+8. **How can you achieve abstraction through encapsulation?**
+   - **Answer**: Encapsulation hides the internal state of an object, providing abstraction over its implementation details. By exposing only essential methods and hiding the internal details, encapsulation achieves abstraction.
+
+9. **Explain the concept of access modifiers in abstraction.**
+   - **Answer**: Access modifiers (public, private, protected) control the visibility of class members. They are used to enforce encapsulation and restrict access to the internal details of an object.
+
+10. **Give an example of abstraction in a real-world scenario.**
+    - **Answer**: An example of abstraction in a real-world scenario is a remote control for a television. The user interacts with the remote control without knowing the internal workings of the television.
+
+### Abstraction Code Examples:
+
+1. Abstract Base Class (Python):
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+rect = Rectangle(5, 4)
+print(rect.area())  # Output: 20
+```
+
+2. Abstract Class (Java):
+```java
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing circle");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.draw();  // Output: Drawing circle
+    }
+}
+```
+
+3. Interface (Java):
+```java
+interface Animal {
+    void speak();
+}
+
+class Dog implements Animal {
+    public void speak() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.speak();  // Output: Dog barks
+    }
+}
+```
+
+4. Abstraction through Encapsulation (Python):
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def display_info(self):
+        print(f"Car: {self.make} {self.model}")
+
+car = Car("Toyota", "Camry")
+car.display_info()  # Output: Car: Toyota Camry
+```
+
+5. Real-World Abstraction Example:
+   - Remote control for a television: Users interact with the remote control to change channels, adjust volume, etc., without knowing the internal circuitry of the television.

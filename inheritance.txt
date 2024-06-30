@@ -1,0 +1,166 @@
+Sure, let's start with inheritance.
+
+### Inheritance Interview Questions (4 Years Experienced):
+
+1. **What is inheritance in OOP, and why is it important?**
+   - **Answer**: Inheritance is a mechanism where a class inherits properties and behaviors from another class. It promotes code reuse and facilitates the "is-a" relationship between classes.
+
+2. **Explain the difference between single inheritance and multiple inheritance.**
+   - **Answer**: Single inheritance involves a class inheriting from only one superclass, while multiple inheritance involves a class inheriting from multiple superclasses.
+
+3. **How do you achieve inheritance in Python and Java? Provide code examples.**
+   - **Answer**: In Python, inheritance is achieved by passing the superclass as an argument in the subclass declaration. In Java, it is achieved using the `extends` keyword.
+
+4. **What is method overriding? Provide an example.**
+   - **Answer**: Method overriding is a feature that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. Example:
+
+    ```python
+    class Animal:
+        def speak(self):
+            print("Animal speaks")
+
+    class Dog(Animal):
+        def speak(self):
+            print("Dog barks")
+
+    dog = Dog()
+    dog.speak()  # Output: Dog barks
+    ```
+
+5. **Explain the concept of super() in Python. How is it used in inheritance?**
+   - **Answer**: `super()` in Python is used to call methods and constructors of the superclass from the subclass. It helps in achieving method chaining and accessing superclass methods and attributes.
+
+6. **What are constructor chaining and constructor overriding?**
+   - **Answer**: Constructor chaining refers to calling constructors of the superclass from the subclass using `super()`. Constructor overriding involves providing a specific implementation of the constructor in the subclass.
+
+7. **How does inheritance help in code organization and maintenance?**
+   - **Answer**: Inheritance facilitates code organization by allowing the creation of hierarchies of related classes. It also promotes code reuse, making it easier to maintain and update code.
+
+8. **Explain the concept of hierarchical inheritance with an example.**
+   - **Answer**: Hierarchical inheritance involves multiple subclasses inheriting from a single superclass. Example:
+
+    ```python
+    class Animal:
+        def speak(self):
+            print("Animal speaks")
+
+    class Dog(Animal):
+        def bark(self):
+            print("Dog barks")
+
+    class Cat(Animal):
+        def meow(self):
+            print("Cat meows")
+    ```
+
+9. **What is the diamond problem in multiple inheritance, and how can it be resolved?**
+   - **Answer**: The diamond problem occurs when a class inherits from two classes that have a common ancestor. It can lead to ambiguity in method resolution. It can be resolved using method resolution order (MRO) or by using interfaces.
+
+10. **Explain the concept of interfaces in Java. How are they related to inheritance?**
+    - **Answer**: Interfaces in Java are abstract types that define a contract for implementing classes. They contain method signatures without implementations. They are related to inheritance as classes can implement multiple interfaces, achieving a form of multiple inheritance.
+
+11. **What are abstract classes, and when would you use them?**
+    - **Answer**: Abstract classes are classes that cannot be instantiated and may contain abstract methods. They serve as blueprints for other classes and provide a common interface for subclasses. They are used when you want to enforce certain behaviors in subclasses.
+
+12. **Explain the concept of access modifiers in inheritance.**
+    - **Answer**: Access modifiers (public, private, protected) control the visibility of class members in inheritance. They specify the level of access to members in subclasses and help enforce encapsulation.
+
+13. **What is the difference between method overloading and method overriding?**
+    - **Answer**: Method overloading involves defining multiple methods with the same name but different parameters within the same class, while method overriding involves providing a specific implementation of a method that is already defined in the superclass within a subclass.
+
+14. **How can you prevent method overriding in Java?**
+    - **Answer**: Method overriding can be prevented in Java by declaring a method as `final` in the superclass. This prevents subclasses from overriding the method.
+
+15. **Explain the concept of dynamic method dispatch.**
+    - **Answer**: Dynamic method dispatch is a mechanism in which the method to be executed is determined at runtime based on the type of the object. It is used in method overriding to achieve polymorphism.
+
+### Inheritance Code Examples:
+
+1. Single Inheritance (Python):
+```python
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+dog = Dog()
+dog.speak()  # Output: Animal speaks
+```
+
+2. Multiple Inheritance (Python):
+```python
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Mammal:
+    def walk(self):
+        print("Mammal walks")
+
+class Dog(Animal, Mammal):
+    def bark(self):
+        print("Dog barks")
+
+dog = Dog()
+dog.walk()  # Output: Mammal walks
+```
+
+3. Method Overriding (Java):
+```java
+class Animal {
+    void speak() {
+        System.out.println("Animal speaks");
+    }
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.speak();  // Output: Dog barks
+    }
+}
+```
+
+4. Constructor Chaining (Python):
+```python
+class Animal:
+    def __init__(self, species):
+        self.species = species
+
+class Dog(Animal):
+    def __init__(self, species, breed):
+        super().__init__(species)
+        self.breed = breed
+
+dog = Dog("Canine", "Labrador")
+print(dog.species)  # Output: Canine
+```
+
+5. Interfaces (Java):
+```java
+interface Animal {
+    void speak();
+}
+
+class Dog implements Animal {
+    public void speak() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.speak();  // Output: Dog barks
+    }
+}
+```

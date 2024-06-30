@@ -1,0 +1,35 @@
+Certainly! Here are some Java interview questions suitable for a fresher, categorized similarly:
+
+### Basic Questions (10 Questions)
+
+1. **What is Java?**
+   - **Answer**: Java is a high-level, object-oriented programming language known for its platform independence, simplicity, and wide usage in various domains such as web development, mobile applications, and enterprise software.
+
+2. **What is the JDK?**
+   - **Answer**: The JDK (Java Development Kit) is a software development kit used to develop Java applications. It includes tools like the Java compiler (`javac`), the Java Virtual Machine (JVM), and various libraries and documentation.
+
+3. **What is the JVM?**
+   - **Answer**: The JVM (Java Virtual Machine) is a virtual machine that executes Java bytecode. It provides a runtime environment for Java programs, handling memory management, garbage collection, and platform independence.
+
+4. **What is the difference between `==` and `.equals()` in Java?**
+   - **Answer**: `==` is used to compare primitive data types or object references, checking if they refer to the same memory location. `.equals()` is a method used to compare the contents of objects, often overridden to provide custom comparison logic.
+
+5. **What are the main principles of OOP?**
+   - **Answer**: The main principles are encapsulation, inheritance, polymorphism, and abstraction, which help in creating modular, reusable, and maintainable code.
+
+6. **What is inheritance in Java?**
+   - **Answer**: Inheritance is a mechanism in Java where a class (subclass) can inherit properties and behavior (methods) from another class (superclass). It promotes code reuse and supports the "is-a" relationship.
+
+7. **What is polymorphism in Java?**
+   - **Answer**: Polymorphism refers to the ability of an object to take on multiple forms. In Java, it can be achieved through method overriding (runtime polymorphism) and method overloading (compile-time polymorphism).
+
+8. **What is the `main()` method in Java?**
+   - **Answer**: `main()` is the entry point method in Java programs. It is the first method called when a Java application starts, and it serves as the starting point for program execution.
+
+9. **What are variables and data types in Java?**
+   - **Answer**: Variables are containers used to store data, and data types specify the type of data that can be stored in a variable. Java supports primitive data types (e.g., int, boolean) and reference data types (e.g., String, arrays).
+
+10. **What is a constructor in Java?**
+    - **Answer**: A constructor is a special method used to initialize objects in Java. It has the same name as the class and is invoked automatically when an object of the class is created.
+
+These questions cover fundamental concepts of Java programming and are suitable for a fresher starting their journey in Java development.

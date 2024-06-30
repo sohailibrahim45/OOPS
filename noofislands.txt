@@ -1,0 +1,38 @@
+from collections import deque
+def num_islands(matrix):
+    rows=len(matrix)
+    cols=len(matrix[0])
+    visited=[[False]*cols for _ in range(rows)]
+    directions=[(0,1),(0,-1),(1,0),(-1,0)]
+    total=0
+    def bfs(r,c):
+        queue=deque([(r,c)])
+        while quaeue:
+            r1,c1=queue.popleft()
+            if not visited[r1][c1]:
+                visited[r1][c1]=True
+                for dr,dc in directions:
+                    newr=r1+dr
+                    newc=c1+dc
+                    if 0<=newr<rows and 0<=newc<cols and matrix[newr][newc]==1 and not visited[newr][newc]:
+                        queue.append((newr,newc))
+                        #visited[newr][newc]=True
+        
+        
+    for i in range(rows):
+        for j in range(cols):
+            if matrix[i][j]==1 and not visited[i][j]:
+                bfs(i,j)
+                total+=1
+    return total
+
+# Example matrix
+matrix = [
+    [0, 0, 1, 0],
+    [0, 1, 0, 0],
+    [0, 0, 0, 1],
+    [0, 0, 1, 0],
+    [1, 1, 0, 1]
+]
+
+print("Total number of islands:", num_islands(matrix))

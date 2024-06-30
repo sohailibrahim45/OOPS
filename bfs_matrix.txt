@@ -1,0 +1,30 @@
+from collections import deque
+
+def bfs(matrix, start):
+    row_count, col_count = len(matrix), len(matrix[0])
+    visited = [[False] * col_count for _ in range(row_count)]
+    print(visited)
+    queue = deque([start])
+    directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+    while queue:
+        current_row, current_col = queue.popleft()
+        if not visited[current_row][current_col]:
+            print(matrix[current_row][current_col])  # Print the value of the current cell
+            visited[current_row][current_col] = True
+
+            for dr, dc in directions:
+                new_row = current_row + dr
+                new_col = current_col + dc
+                if 0 <= new_row < row_count and 0 <= new_col < col_count and not visited[new_row][new_col]:
+                    queue.append((new_row, new_col))
+                    # Mark the neighbor as visited only when it's enqueued for exploration
+
+# Example matrix
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+# Starting point
+start_point = (0, 0)
+x = bfs(matrix, start_point)
